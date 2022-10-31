@@ -1,6 +1,8 @@
 import { useState } from "react";
 
 function AngryButton() {
+  const [anger, setAnger] = useState();
+
   return (
     <button className="AngryButton">
       <span>Don't click me too much! </span>

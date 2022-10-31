@@ -1,6 +1,8 @@
 import { useState } from "react";
 
 function LightSwitchButton() {
+  const [light, setLight] = useState();
+
   return (
     <button className="LightSwitchButton">
       <span className="On"><i>💡</i> I'm on!</span>
