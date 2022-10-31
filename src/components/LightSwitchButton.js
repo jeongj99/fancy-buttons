@@ -1,13 +1,6 @@
 function LightSwitchButton(props) {
-  const { light, setLight } = props;
-
-  const handleClick = () => {
-    if (light === 'on') {
-      setLight('off');
-    } else {
-      setLight('on');
-    }
-  };
+  const { light, switchLight } = props;
+  const handleClick = () => switchLight();
 
   return (
     <button onClick={handleClick} className="LightSwitchButton">
